@@ -1,3 +1,4 @@
+
 # Task_1
 # Напишите функцию для транспонирования матрицы
 # matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
@@ -52,15 +53,40 @@
 # ✔ При превышении суммы в 5 млн, вычитать налог на богатство 10% перед каждой
 # операцией, даже ошибочной
 # ✔ Любое действие выводит сумму денег
-sum = 0
-count = 0
-menu = "1 - пополнить, 2 - снять, 3 - выход: "
-while True:
-    match input(menu):
-        case '1':
 
-            def replenish():
-                pass
-        case '2':
-            def take_off():
-                pass
+
+# while True:
+#     wallet = 1500
+#     currency = 'rub'
+#     name_wallet = 'Уважаемый клиент '
+#     def cash_withdrawal(money_for_cash: int, wallets: int):
+#         global wallet
+#         if money_for_cash < 100:
+#             return 'Сумма снятия должна быть кратна сумме 100 рублей'
+#         if wallet < money_for_cash:
+#             return 'Сумма снятия наличных превышает сумму доступного!'
+#         else:
+#             wallet -= money_for_cash
+#             return wallet
+#
+#
+#     def cash_depositing(count: int):
+#         global wallet
+#         money = int(input('Введите сумму пополнения: '))
+#         count = count + money
+#         return count
+#
+#     def switch_case():
+#         global wallet
+#         way = int(input("Выберите какую операцию вы бы хотели произвести:\n1 ---> "
+#                         "Снятие наличных\n2 ---> Внесение средств на картрасчет:\n"))
+#         match way:
+#             case 1:
+#                 print(cash_withdrawal(int(input('Введите сумму для снятия наличных ')), wallet))
+#                 print(f'Ваш остаток на счету {name_wallet} {wallet} {currency}')
+#                 return
+#             case 2:
+#                 print(cash_depositing(wallet))
+#                 print(f'Ваш остаток на счету {wallet} {currency}')
+#
+#     switch_case()
