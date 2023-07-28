@@ -27,3 +27,17 @@
 # mult = (i + j for i in x if i % 2 != 0 for j in y if j != 1)
 # res = list(mult)
 # print(f'{len(res)=}\n{res}')
+
+def factorial(n):
+    number = 1
+    for i in range(1, n + 1):
+        number *= i
+        yield number
+
+my_iter = iter(factorial(4))
+print(my_iter)
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter)) # StopIteration
